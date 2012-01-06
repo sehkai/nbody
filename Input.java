@@ -21,7 +21,8 @@ public class Input {
 		try {
 			reader = new Scanner(new FileReader(filename));	
 		} catch (Exception e) {
-			System.out.println("File not found");
+			System.out.println("File not found: "+filename);
+			System.exit(0);
 		}
 		
 	}
