@@ -17,7 +17,7 @@ public class BouncingEarth {
         // initial values
         double rx = 0.480, ry = 0.860;     // position
         double vx = 0.015, vy = 0.023;     // velocity
-        double radius = 0.09;              // radius
+        double radius = 0.05;              // radius
 
         // main animation loop
         while (true)  { 
@@ -34,7 +34,7 @@ public class BouncingEarth {
             StdDraw.picture(0, 0, "nbody/starfield.jpg", 2*universeRadius, 2*universeRadius);
 
             // draw earth on the screen
-            StdDraw.picture(rx, ry, "nbody/earth.gif", 2*radius, 2*radius);
+            StdDraw.picture(rx, ry, "nbody/earth.gif");
 
 
             // display and pause for 20 ms
